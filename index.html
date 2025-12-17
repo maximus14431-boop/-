@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Dead Tech </h1>
+        <p>крутые игры по доступным ценам</p>
+        <p>геймерам </p>
+    </header>
+
+    <nav>
+        <a href="#popular">популярные товары</a>
+        <a href="#games of the day">товар дня</a>
+        <a href="#eat">еда</a>
+        <a href="#weak computer">слабый комп</a>
+        <a href="#cart">корзина(<span id="cart-count">0</span>)</a>
+   </nav>
+
+    <main>
+        <h2>О нашем магазине</h2>
+        <p>Dead Tech</p>
+        <p>мы подскажем что вам нужно</p>
+
+
+        <h3>как мы</h3>
+        <ul>
+           <li>мы слепые</li>
+           <li>мы крутые</li>
+           <li>мы глухие</li>
+        </ul>
+        
+
+        <section id="popular">
+            <h2>Популярные товары</h2>
+            <div>
+                <article>
+                    <img src="dead space.jpg" alt="">
+                    <h3>игра мертвый космос </h3>
+                    <p>цена = 1000 </p>
+                    <button onclick="addTocart('мертвый космос, 1000')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="dead space 2 .jpg" alt="">  
+                    <h3>игра мертвый космос</h3>
+                    <p>цена = 1889 </p>
+                    <button onclick="addTocart('мертвый космос, 1889')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="dead space 3 .jpg" alt="">
+                    <h3>игра мертвый космос</h3>
+                    <p>цена = 8769 рублей</p>
+                    <button onclick="addTocart('мертвый космос, 8769')"> В корзину</button>
+                </article>
+                <article>r
+                    <img src="dead space 4 .jpg" alt="">
+                    <h3>игра мертвый космос</h3>
+                    <p>цена = 3000 рублей</p>
+                    <button onclick="addTocart('мертвый космос, 3000')"> В корзину</button>
+                </article>
+
+            </div> 
+        </section>
+
+        
+
+
+        </section>
+
+
+        <section id="games of the day">
+            <h3>товар дня</h3>
+            <div>
+                <article>
+                    <img src="гта.jpg" alt="">
+                    <h3>игра гта</h3>
+                    <p>цена = 999</p>
+                    <button onclick="addTocart('гта, 999')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="Dota.jpg" alt="">
+                    <h3>игра дота</h3>
+                    <p>цена = 10000000</p>
+                    <button onclick="addTocart('дота, 10000000')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="minecraft.jpg" alt="">
+                    <h3>игра майн крафт</h3>
+                    <p>цена = 1888</p>
+                    <button onclick="addTocart('маинкрафт, 1888')"> В корзину</button>
+                </article>
+            </div> 
+        </section> 
+        
+
+
+
+        
+        <section id="eat">
+            <h3>еда</h3>
+            <div>
+                <article>
+                    <img src="pizza.jpg" alt="">
+                    <h3>бутерброды</h3>
+                    <p>цена = 999</p>
+                    <button onclick="addTocart('бутерброды, 999')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="eat.jpg" alt="">
+                    <h3>вкуснятина</h3>
+                    <p>цена = 10000000</p>
+                    <button onclick="addTocart('вкуснятина, 10000000')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="sushi.jpg" alt="">
+                    <h3>суши</h3>
+                    <p>цена = 1888</p>
+                    <button onclick="addTocart('суши, 1888')"> В корзину</button>
+                </article>
+            </div> 
+        </section>
+        
+        
+        
+        <section id="weak computer">
+            <h3>слабый комп</h3>
+            <div>
+
+                <article>
+                    <img src="bs.jpg" alt="">
+                    <h3>задрот</h3>
+                    <p>цена = 0</p>
+                    <button onclick="addTocart('задрот, 0')"> В корзину</button>
+                </article>
+                <article>
+                    <img src="poker.jpg" alt="">
+                    <h3>нищий</h3>
+                    <p>цена =99999999</p>
+                    <button onclick="addTocart('покер, 99999999')"> В корзину</button>
+                </article>
+            </div>
+        </section>
+                    
+
+    </main>
+
+    <section id="cart">
+        <h2>🛒 Корзина</h2>
+        <div id="cart-items">
+            <p id="empty-cart-message">Корзина пуста</p>
+        </div>
+    
+
+
+        <div>
+            <div id="cart-total">
+                <p>Итого: <span id="total-price">0</span>руб.</p>
+                <button onclick="checkout()">оформить заказ</button>
+                <button onclick="clearCаrt()">очистить корзину</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Dead Tech - твой выбор</p>
+        <p>покупайте у нас</p>
+        <p>ⓒ 2033 Dead Tech. Все права защищены</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
